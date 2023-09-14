@@ -1,0 +1,68 @@
+/* CSS for the header */
+.header {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 10px;
+}
+
+.header-text {
+  margin: 0; /* Remove default margin for h1 element */
+}
+
+.sub-header-text {
+  margin-top: 0; /* Remove top margin for h2 element */
+}
+
+/* CSS for invalid fields */
+input:invalid, select:invalid {
+  border: 2px solid red;
+}
+
+.form-container {
+  max-width: 600px; /* Set a maximum width for the form container */
+  margin: 0 auto; /* Center the form horizontally by using auto margins */
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border around the form */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-column {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 15px; /* Add horizontal padding for spacing between columns */
+  }
+  
+  .form-column:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Adjust the styling of the individual form fields */
+  .form-field {
+    margin-bottom: 20px; /* Add vertical margin to create space between form fields */
+  }
+  
+  .form-field label {
+    display: block; /* Display labels as block elements for better spacing */
+  }
+  
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    padding: 5px; /* Add padding to form elements for spacing */
+  }
+  .validation-alert {
+    background-color: #ffdddd; /* Background color for error messages */
+    color: #ff0000; /* Text color for error messages */
+    padding: 10px; /* Padding around the error message */
+    margin-bottom: 10px; /* Spacing between error messages and form elements */
+    border: 1px solid #ff0000; /* Border around the error message */
+    border-radius: 5px; /* Rounded corners for the error message */
+    overflow:hidden;
+  }
+  

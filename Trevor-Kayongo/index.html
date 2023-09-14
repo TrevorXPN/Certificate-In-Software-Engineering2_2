@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="validation-alert" id="validationAlert">
+    <form id="loanRegistrationForm" action="/submit" method="post">
+      <div class="header">
+        <h1 class="header-text">Uwezo Finance Services</h1>
+    </div>
+    <div class="subheader">
+      <h2 class="sub-header-text">Loan Request Form</h2>
+    </div>
+
+        <div class="form-column">
+          <div class="form-field">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" minlength="2" maxlength="255" pattern="^[A-Za-z]+$" required>
+          </div>
+      
+          <div class="form-field">
+            <label for="givenName">Given Name:</label>
+            <input type="text" id="givenName" name="givenName" minlength="2" maxlength="255" pattern="^[A-Za-z]+$" required>
+          </div>
+      
+          <div class="form-field">
+            <label for="nin">NIN:</label>
+            <input type="text" id="nin" name="nin" minlength="13" maxlength="14" required>
+            <!--It must start with either "CM" or "CF.",The next 8 characters must be numeric digits.,It can have one or more non-digit characters (e.g., letters, symbols) at the end of the string, but not before the numeric digits.-->
+          </div>
+      
+          <div class="form-field">
+            <label for="dob">Date of Birth (YY/MM/DD):</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+      
+          <div class="form-field">
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" minlength="2" maxlength="255" required>
+          </div>
+      
+          <div class="form-field">
+            <label for="placeOfWork">Place of Work:</label>
+            <input type="text" id="placeOfWork" name="placeOfWork" minlength="2" maxlength="255" required>
+          </div>
+        </div>
+      
+        <div class="form-column">
+          <div class="form-field">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="">-- Select Gender --</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+      
+          <div class="form-field">
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="number" id="loanAmount" name="loanAmount" min="500000" max="50000000" required>
+          </div>
+      
+          <div class="form-field">
+            <label for="loanSecurity">Loan Security:</label>
+            <input type="text" id="loanSecurity" name="loanSecurity" minlength="5" maxlength="255" required>
+          </div>
+      
+          <div class="form-field">
+            <label for="fallbackSecurity">Fallback Security:</label>
+            <input type="text" id="fallbackSecurity" name="fallbackSecurity" minlength="5" maxlength="255" required>
+          </div>
+        </div>
+      
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+    
+      <script src="scripts.js"></script>    
+</body>
+</html>

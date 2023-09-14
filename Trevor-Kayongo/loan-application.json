@@ -1,0 +1,12 @@
+{
+    "surname": "Doe",
+    "givenName": "John",
+    "nin": "CM12345678X",
+    "dob": "1990-01-01",
+    "occupation": "Engineer",
+    "placeOfWork": "Tech Company",
+    "gender": "Male",
+    "loanAmount": 1000000,
+    "loanSecurity": "Property",
+    "fallbackSecurity": "Savings Account"
+}
